@@ -1,0 +1,23 @@
+/* ==========================================================================
+   LAYOUTS / CONTAINER
+   ========================================================================== */
+
+.l-container {
+  --gutter: max(5vi, 20px);
+  box-sizing: revert;
+  max-inline-size: var(--container-max-width);
+  padding-inline: var(--gutter);
+  margin-inline: auto;
+}
+
+.l-container--s {
+  --gutter: max(5vi, 20px);
+  box-sizing: revert;
+  max-inline-size: 1110px;
+  padding-inline: var(--gutter);
+  margin-inline: auto;
+}
+
+.l-wrapper {
+  overflow: clip;
+}

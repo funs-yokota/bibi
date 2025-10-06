@@ -1,0 +1,70 @@
+/* ==========================================================================
+   LAYOUTS / MAIN
+   ========================================================================== */
+
+.l-news__list {
+}
+
+.l-news__listItem {
+  border-bottom: 1px solid var(--color-border);
+  a {
+    padding-block: 25px;
+    padding-inline-end: 40px;
+    display: block;
+    position: relative;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.6;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      content: '';
+      display: inline-block;
+      width: 35px;
+      aspect-ratio: 1 / 1;
+      background-image: url('../../img/icon/arrow-right-short.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.l-news__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.l-news__cat {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.l-news__catItem {
+  padding: 2px 15px;
+  border-radius: 50vw;
+  border: 1px solid #333;
+  font-size: 12px;
+}
+
+.l-news__title {
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .l-news__listItem {
+    a {
+      padding-block: 10px;
+    }
+  }
+}
