@@ -1,0 +1,44 @@
+/* ==========================================================================
+   COMPONENTS / BREADCRUMBS
+   ========================================================================== */
+
+.breadcrumbsWrap {
+  --gutter: max(5vi, 20px);
+  box-sizing: revert;
+  max-inline-size: var(--container-max-width);
+  padding-inline: var(--gutter);
+  margin-inline: auto;
+  margin: auto;
+  color: var(--color-main-text);
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  & * {
+    font-size: 14px;
+  }
+}
+.breadcrumbs .home {
+  color: var(--color-main-text);
+  transition: all 0.3s ease;
+  &:hover {
+    color: var(--color-purple);
+  }
+}
+.breadcrumbs .arrow {
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-top: solid 1.5px var(--color-main-text);
+  border-right: solid 1.5px var(--color-main-text);
+  margin-right: 10px;
+  margin-left: 10px;
+  transform: rotate(45deg);
+}
