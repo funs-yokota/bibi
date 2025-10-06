@@ -1,0 +1,208 @@
+.l-mv-about {
+  background: url('../../img/aboutus/mv-pc.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ==========================================================================
+PAGES / TOP PAGE / ABOUT
+========================================================================== */
+
+.p-about-philosophy {
+  padding-block: 100px;
+}
+
+.p-about-philosophy__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(580px, 1fr));
+  align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .p-about-philosophy {
+    padding-block: 50px 0;
+  }
+  .p-about-philosophy__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+/* ==========================================================================
+PAGES / TOP PAGE / MISSION
+========================================================================== */
+
+.p-about-mission {
+  background: linear-gradient(180deg, #ffffff 0%, #fffdde 100%);
+  padding-block: 100px;
+}
+
+.p-about-mission__main {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.p-about-mission__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-block-start: 60px;
+}
+
+.p-about-mission__listItem {
+  border-bottom: 1px solid #76767b;
+  padding-bottom: 15px;
+}
+
+.p-about-mission__mainTitle {
+  --clamp-min: 30;
+  --clamp-max: 65;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.p-about-mission__mainText {
+  --clamp-min: 18;
+  --clamp-max: 20;
+  line-height: 1;
+}
+
+.p-about-mission__listText {
+  --clamp-min: 20;
+  --clamp-max: 30;
+  margin-block-start: 20px;
+}
+
+@media (max-width: 768px) {
+  .p-about-mission {
+    padding-block: 50px;
+  }
+}
+
+/* ==========================================================================
+PAGES / TOP PAGE / feature
+========================================================================== */
+
+.p-about-feature {
+  padding-block: 100px;
+}
+
+.p-about-feature__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  align-items: start;
+  gap: 30px;
+  margin-block-start: 60px;
+}
+
+.p-about-feature__title {
+  --clamp-min: 22;
+  --clamp-max: 26;
+  text-align: center;
+  font-weight: 600;
+  margin-block: 10px;
+}
+
+.p-about-feature__text {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .p-about-feature {
+    padding-block: 50px;
+  }
+  .p-about-feature__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+PAGES / TOP PAGE / faq
+========================================================================== */
+
+.p-about-faq {
+  padding-block: 100px 20vw;
+  background: #fffde2;
+}
+
+.faq__accordion {
+  max-inline-size: 1070px;
+  margin-inline: auto;
+  margin-block-end: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.faq__accordion summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1em 2em 1em 1em;
+  color: var(--color-main-text);
+  font-weight: 600;
+  cursor: pointer;
+  --clamp-min: 16;
+  --clamp-max: 22;
+}
+
+.faq__accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  span {
+    inline-size: 40px;
+  }
+}
+
+.faq__accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq__accordion summary::before,
+.faq__accordion summary::after {
+  width: 2px;
+  height: 1.3em;
+  border-radius: 5px;
+  background-color: var(--color-main-text);
+  content: '';
+}
+
+.faq__accordion summary::before {
+  position: absolute;
+  right: 2em;
+  rotate: 90deg;
+}
+
+.faq__accordion summary::after {
+  transition: rotate 0.3s;
+}
+
+.faq__accordion[open] summary::after {
+  rotate: 90deg;
+}
+
+.faq__accordion p {
+  transform: translateY(-10px);
+  opacity: 0;
+  margin: 0;
+  padding: 0.3em 2em 1.5em;
+  color: var(--color-main-text);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.faq__accordion[open] p {
+  transform: none;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .p-about-faq {
+    padding-block: 50px;
+  }
+}

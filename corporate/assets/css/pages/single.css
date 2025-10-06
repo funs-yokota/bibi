@@ -1,0 +1,50 @@
+.l-mv-single {
+  background: url('../../img/news/mv-pc.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ==========================================================================
+PAGES / TOP PAGE / single
+========================================================================== */
+
+.p-single-main {
+  padding-block: 100px 450px;
+}
+
+.p-news-single-main__title {
+  --clamp-min: 20;
+  --clamp-max: 30;
+  font-weight: 600;
+}
+
+.p-news-single-main__button {
+  width: 350px;
+  margin-inline: auto;
+  margin-block-start: 60px;
+  text-align: center;
+  a {
+    display: block;
+    padding: 15px 15px;
+    font-size: 16px;
+    color: #ffffff;
+    position: relative;
+    border-radius: 50vw;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: var(--color-pink);
+    border: 1px solid var(--color-pink);
+    &:hover {
+      color: var(--color-pink);
+      cursor: pointer;
+      background: #fff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .p-single-main {
+    padding-block: 50px;
+  }
+}
